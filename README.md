@@ -145,10 +145,10 @@ To assign a drive letter, you can type 'assign' as shown below.
 You can assign specyfic letter for each volume:
 
 ```bash
-DISKPART> <br>
-list volume <br>
-select volume 2 <br>
-assign letter=z <br>
+DISKPART>
+list volume
+select volume 2
+assign letter=z 
 ```
 
 ### STEP 9: List existing volumes
