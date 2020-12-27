@@ -7,11 +7,18 @@
 ### STEP 1: Open Command Prompt As Administrator
 
 ```bash
-run > cmd
+search for > cmd
 ```
 
 <p align="center">
     <img width="400px" src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/asAdmin.jpg" alt="run as administrator">
+</p>
+and run as Administrator
+
+or use file explorer and find cmd file, use right mouse button and select *'Run as administrator'*
+
+<p align="center">
+    <img width="400px" src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/asAdmin2.jpg" alt="run as administrator">
 </p>
 
 ### STEP 2: Use Diskpart
@@ -23,7 +30,9 @@ Po otwarciu lini komend, wrowadź komendę '**diskpart**' i zatwierdź klawiszem
 ```bash
 c:\windows\system32> diskpart
 ```
-
+<p align="center">
+    <img width="400px" src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/cmd.jpg" alt="cmd">
+</p>
 
 <!-- <h3 align="center"> <a href="https://pl.reactjs.org">React</a></h3> -->
 
