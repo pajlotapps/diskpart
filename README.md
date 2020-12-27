@@ -36,29 +36,27 @@ c:\windows\system32 > diskpart
 </p>
 
 
-### STEP 3:    Type List Disk
+### STEP 3: Type List Disk
 
-`list disk'
-
-The above command will open a Diskpart window. In this window, type 'list disk' and press Enter. It will list all the available drives.
+The above command will open a Diskpart window. In this window, type `list disk` and press Enter. <br>
+It will list all the available drives.
 
 
 
 
 ### STEP 4: Select the Drive to Format
 
-`select disk #`
-`# number of disk` 
+`select disk #` <br>
+**`#** *stands for number of disk*
 
 
-Now type 'select disk (disk number)' as shown above. Specify the drive number which needs to be formatted.
+Now type 'select disk (disk number)' as shown above. <br>
+Specify the drive number which needs to be formatted.
 
 
 ### STEP 5: Clean the Disk
 
-`clean`
-
-In this step, type 'clean'. This command will permanent delete all files and folders, and successfully clean up the disk.
+In this step, type `clean`. This command will permanent delete all files and folders, and successfully clean up the disk.
 
 ### STEP 6: Create Partition Primary
 
