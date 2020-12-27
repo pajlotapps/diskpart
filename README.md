@@ -1,11 +1,8 @@
-# Format a Hard Drive Using the Command Prompt😄
+# Format a Hard Drive Using the Command Prompt 
 
-## Formatowanie dysku twardego przy wykorzystaniu linii komend 😄
+## Formatowanie dysku twardego przy wykorzystaniu linii komend
 
 <!-- ...trying to figure out how it is working -->
-
-
-# [React][react-url] dla początkujących - Poradnik 
 
 ### STEP 1: Open Command Prompt As Administrator
 
@@ -14,7 +11,7 @@ run > cmd
 ```
 
 <p align="center">
-    <img alt="react" width="104px" src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/asAdmin.jpg" alt="run as administrator">
+    <img src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/asAdmin.jpg" alt="run as administrator">
 </p>
 
 ### STEP 2: Use Diskpart
