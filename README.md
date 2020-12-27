@@ -58,7 +58,7 @@ DISKPART> list disk
 
 
 ```bash
-DISKPART> select disk 0
+DISKPART> select disk 2
 ```
 
 <p align="center">
@@ -136,22 +136,29 @@ This command will **erase all saved data** sector by sector. In other words, you
 DISKPART> assign
 ```
 
+To assign a drive letter, you can type 'assign' as shown below.
+
 <p align="center">
     <img width="400px" src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/assign.png" alt="cmd">
 </p>
 
-To assign a drive letter, you can type 'assign' as shown below.
-
-### STEP 9: List existing volumes
+You can assign specyfic letter for each volume:
 
 ```bash
-DISKPART> list volume
+DISKPART> <br>
+list volume <br>
+select volume 2 <br>
+assign letter=z <br>
 ```
+
+### STEP 9: List existing volumes
 
 Along with your list of disks, you can also ask Diskpart for a list of detected volumes. <br>
 At the **“DISKPART**>” prompt, type list volume:
 
-
+```bash
+DISKPART> list volume
+```
 
 <!-- ![preview][test-url] -->
 
