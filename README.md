@@ -11,7 +11,7 @@ run > cmd
 ```
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/asAdmin.jpg" alt="run as administrator">
+    <img width="400px" src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/asAdmin.jpg" alt="run as administrator">
 </p>
 
 ### STEP 2: Use Diskpart
