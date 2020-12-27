@@ -13,11 +13,8 @@
 run > cmd
 ```
 
-
 <p align="center">
-  <a href="https://pl.reactjs.org">
-    <img alt="react" width="104px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="React logo">
-  </a>
+    <img alt="react" width="104px" src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/asAdmin.jpg" alt="run as administrator">
 </p>
 
 ### STEP 2: Use Diskpart
