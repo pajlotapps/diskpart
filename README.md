@@ -46,6 +46,11 @@ It will list all the available drives.
 DISKPART> list disk
 ```
 
+<p align="center">
+    <img width="400px" src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/listDisk.png" alt="cmd">
+</p>
+
+
 ### STEP 4: Select the Drive to Format
 
 `select disk #` <br>
@@ -55,6 +60,11 @@ DISKPART> list disk
 ```bash
 DISKPART> select disk 0
 ```
+
+<p align="center">
+    <img width="400px" src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/select.png" alt="cmd">
+</p>
+
 
 Now type 'select disk (disk number)' as shown above. <br>
 Specify the drive number which needs to be formatted.
@@ -68,8 +78,15 @@ In this step, type `clean`. This command will permanent delete all files and fol
 DISKPART> clean
 ```
 
+<p align="center">
+    <img width="400px" src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/clean.png" alt="cmd">
+</p>
+
 ### STEP 6: Create Partition Primary
 
+```bash
+DISKPART> create partition primary
+```
 
 To make the drive again accessible, type `create partition primary`
 
@@ -78,8 +95,12 @@ You can set size of partition with commend:
 `create partition primary size=100000`
 
 
+<p align="center">
+    <img width="400px" src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/createPartition.png" alt="cmd">
+</p>
+
 ```bash
-DISKPART> create partition primary
+DISKPART> list partition
 ```
 
 ### STEP 7: Format the Drive
@@ -87,6 +108,10 @@ DISKPART> create partition primary
 ```bash
 DISKPART> format fs=ntfs quick
 ```
+
+<p align="center">
+    <img width="400px" src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/format.png" alt="cmd">
+</p>
 
 Now format the drive with FAT or NTFS file system. Type `format fs=ntfs` and press Enter.
 
@@ -99,15 +124,36 @@ If you need to format a hard drive partition to FAT32 or other file systems, rep
 If you choose the Quick format option, format removes files from the partition, but does not scan the disk for bad sectors. Only use this option if your hard disk has been previously formatted and you are sure that your hard disk is not damaged."
 
 
-**##WARNING: **
+**WARNING**
 
 If you accidentally input format without `fs=ntfs quick or fs=fat32 quick` in DiskPart command prompt, it will execute a full format on your selected hard drive partition.
 This command will **erase all saved data** sector by sector. In other words, you'll permanently lose all erased data on the disk with no recovery chance.
 
 
+### STEP 8: Assign a Drive Letter
+
+```bash
+DISKPART> assign
+```
+
+<p align="center">
+    <img width="400px" src="https://raw.githubusercontent.com/pajlotapps/diskpart/main/src/assign.png" alt="cmd">
+</p>
+
+To assign a drive letter, you can type 'assign' as shown below.
+
+### STEP 9: List existing volumes
+
+```bash
+DISKPART> list volume
+```
+
+Along with your list of disks, you can also ask Diskpart for a list of detected volumes. <br>
+At the **“DISKPART**>” prompt, type list volume:
 
 
-![preview][test-url]
+
+<!-- ![preview][test-url] -->
 
 
 <!-- Linki -->
