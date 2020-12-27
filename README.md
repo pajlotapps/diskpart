@@ -42,13 +42,19 @@ The above command will open a Diskpart window. In this window, type `list disk` 
 It will list all the available drives.
 
 
-
+```bash
+DISKPART> list disk
+```
 
 ### STEP 4: Select the Drive to Format
 
 `select disk #` <br>
 **`#** *stands for number of disk*
 
+
+```bash
+DISKPART> select disk 0
+```
 
 Now type 'select disk (disk number)' as shown above. <br>
 Specify the drive number which needs to be formatted.
@@ -57,6 +63,10 @@ Specify the drive number which needs to be formatted.
 ### STEP 5: Clean the Disk
 
 In this step, type `clean`. This command will permanent delete all files and folders, and successfully clean up the disk.
+
+```bash
+DISKPART> clean
+```
 
 ### STEP 6: Create Partition Primary
 
@@ -68,8 +78,15 @@ You can set size of partition with commend:
 `create partition primary size=100000`
 
 
+```bash
+DISKPART> create partition primary
+```
+
 ### STEP 7: Format the Drive
 
+```bash
+DISKPART> format fs=ntfs quick
+```
 
 Now format the drive with FAT or NTFS file system. Type `format fs=ntfs` and press Enter.
 
@@ -82,10 +99,13 @@ If you need to format a hard drive partition to FAT32 or other file systems, rep
 If you choose the Quick format option, format removes files from the partition, but does not scan the disk for bad sectors. Only use this option if your hard disk has been previously formatted and you are sure that your hard disk is not damaged."
 
 
-##WARNING:
+**##WARNING: **
 
-If you accidentally input format without "fs=ntfs quick or fs=fat32 quick" in DiskPart command prompt, it will execute a full format on your selected hard drive partition.
-This command will erase all saved data sector by sector. In other words, you'll permanently lose all erased data on the disk with no recovery chance.
+If you accidentally input format without `fs=ntfs quick or fs=fat32 quick` in DiskPart command prompt, it will execute a full format on your selected hard drive partition.
+This command will **erase all saved data** sector by sector. In other words, you'll permanently lose all erased data on the disk with no recovery chance.
+
+
+
 
 ![preview][test-url]
 
